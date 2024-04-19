@@ -4,8 +4,20 @@ builder.Services.AddControllersWithViews();
 
 
 var app = builder.Build();
+app.UseStaticFiles();
+app.UseRouting();
 
-app.MapGet("/", () => "Hello Worlddd!");
-app.MapGet("/ahmet", () => "BELER Worlddd!");
+app.MapControllerRoute(
+
+    name :"default",
+    pattern:"{controller=Home}/{action=Index}/{id?}"
+
+);
+
+
 
 app.Run();
+
+
+
+

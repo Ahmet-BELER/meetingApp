@@ -23,3 +23,7 @@ C:\Users\Ahmet\Desktop\asp\meetapp\MeetingApp\obj\Debug\net8.0\refint\MeetingApp
 C:\Users\Ahmet\Desktop\asp\meetapp\MeetingApp\obj\Debug\net8.0\MeetingApp.pdb
 C:\Users\Ahmet\Desktop\asp\meetapp\MeetingApp\obj\Debug\net8.0\MeetingApp.genruntimeconfig.cache
 C:\Users\Ahmet\Desktop\asp\meetapp\MeetingApp\obj\Debug\net8.0\ref\MeetingApp.dll
+C:\Users\Ahmet\Desktop\asp\meetapp\MeetingApp\obj\Debug\net8.0\MeetingApp.sourcelink.json
+C:\Users\Ahmet\Desktop\asp\meetapp\MeetingApp\obj\Debug\net8.0\MeetingApp.RazorAssemblyInfo.cache
+C:\Users\Ahmet\Desktop\asp\meetapp\MeetingApp\obj\Debug\net8.0\MeetingApp.RazorAssemblyInfo.cs
+C:\Users\Ahmet\Desktop\asp\meetapp\MeetingApp\bin\Debug\net8.0\libman.json
