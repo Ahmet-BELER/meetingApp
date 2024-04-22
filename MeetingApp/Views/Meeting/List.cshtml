@@ -1,3 +1,7 @@
+
+@model List<UserInfo>
+
+
 <h1 class="h4">Toplantı Katılım Listesi</h1>
 <table class="table table-bordered">
     <thead>
@@ -9,29 +13,29 @@
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <td>Ahmet Beler</td>
-            <td>info@beler.com</td>
+
+
+        @foreach(var user in Model){
+
+            var durum =user.WillAttend == true ? "Evet": "Hayır";
+            var nameClass = user.WillAttend == true ? "table-sucses": "table-danger";
+
+
+         <tr class="@nameClass">
+            <td>@user.Name</td>
+            <td>@user.Email</td>
             <td>     Evet</td>
             <td>
-                <a  class="btn btn-sm btn-primary"  href="#">Detay</a>
+                <a  class="btn btn-sm btn-primary"  href="/meeting/details/@user.id">Detay</a>
             </td>
         </tr>
-        <tr>
-            <td>Ahmet Beler</td>
-            <td>info@beler.com</td>
-            <td>     Evet</td>
-            <td>
-               <a  class="btn btn-sm btn-primary"  href="#">Detay</a>
-            </td>
-        </tr>
-                <tr>
-            <td>Ahmet Beler</td>
-            <td>info@beler.com</td>
-            <td>    hayır</td>
-            <td>
-                <a  class="btn btn-sm btn-primary"  href="#">Detay</a>
-            </td>
-            
-        </tr>
+
+        }
+
+
+
+
+
+
+   
     </tbody>
