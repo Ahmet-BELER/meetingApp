@@ -26,15 +26,23 @@ namespace MeetingApp.Controllers
 
 
             };
-
+           
+           ViewBag.UserCount = Repository.Users.Where(info => info.WillAttend == true).Count();
             return View(meetingInfo );
 
 
         }
 
+//     public IActionResult Apply(UserInfo model)
 
-}
+//         {
+//             Repository.CreateUser( model);
+//             ViewBag.UserCount = Repository.Users.Where(info => info.WillAttend == true).Count();
+//             return View("Thanks", model);
 
+//         }
+
+ }
 
 
 }

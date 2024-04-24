@@ -3,6 +3,7 @@
 
 
 <h1 class="h4">Toplantı Katılım Listesi</h1>
+    <p>toplantıya sizinle birlikte @ViewBag.UserCount kişi katılıyor.</p>
 <table class="table table-bordered">
     <thead>
         <tr>
@@ -13,7 +14,6 @@
         </tr>
     </thead>
     <tbody>
-
 
         @foreach(var user in Model){
 
@@ -29,6 +29,7 @@
                 <a  class="btn btn-sm btn-primary"  href="/meeting/details/@user.id">Detay</a>
             </td>
         </tr>
+
 
         }
 
